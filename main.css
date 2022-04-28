@@ -1,6 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 .parent {
@@ -29,6 +35,8 @@
   top: 0;
   left: 0;
   width: 100%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .nav li {
@@ -40,11 +48,11 @@
   text-decoration: none;
   text-align: center;
   padding: 14px;
-  color: rgba(238, 238, 238, 0.569);
+  color: rgba(255, 255, 255, 0.84);
 }
 
 .nav a:hover {
-  color: rgba(243, 243, 243, 0.856);
+  color: #ffffff;
 }
 
 .carrousel {
@@ -133,6 +141,52 @@
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+.contenido {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.564);
+  margin: 20px;
+  padding-bottom: 177;
+}
+
+footer {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.564);
+  margin: 20px;
+  display: flex;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  width: auto;
+}
+
+.contenido-servicios {
+  margin-top: 80px;
+  padding: 30px;
+  color: rgba(255, 255, 255, 0.564);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.titulo-servicios{
+  font-size: 40px;
+  text-align: center;
+} 
+
+.servicios{
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.564);
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 @keyframes fade {
