@@ -14,7 +14,6 @@ html body {
   height: 100%;
   width: 100%;
   flex-direction: column;
-  align-items: center;
   background: rgb(0, 212, 255);
   background: linear-gradient(
     180deg,
@@ -24,34 +23,13 @@ html body {
     rgba(2, 0, 36, 1) 100%
   );
   background-attachment: fixed;
+  align-items: center;
 }
 
-.nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.nav li {
-  float: left;
-}
-
-.nav a {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  padding: 14px;
-  color: rgba(255, 255, 255, 0.84);
-}
-
-.nav a:hover {
-  color: #ffffff;
+nav {
+  color: aliceblue;
+  display: flex;
+  align-items: flex-start;
 }
 
 .carrousel {
@@ -92,28 +70,74 @@ footer a {
   flex-direction: column;
 }
 
-.titulo-servicios{
+.titulo-servicios {
   font-size: 40px;
-    text-align: center;
-} 
+  text-align: center;
+}
 
-.servicios{
+.servicios {
   margin-top: 10px;
   padding: 60px;
   background-color: rgba(255, 255, 255, 0.564);
   text-align: center;
   flex-wrap: wrap;
 }
-.servicios li{
+.servicios li {
   list-style: none;
   text-align: start;
 }
 
-
-
-.nav .icon-menu {
-  display: none;
+.contenido-registro {
+  margin-top: 80px;
+  padding: 50px;
+  color: rgba(255, 255, 255, 0.564);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.titulo-registrar {
+  font-size: 40px;
+  text-align: center;
+}
+
+.registro-usuario {
+  margin-top: 10px;
+  padding: 60px;
+  background-color: rgba(255, 255, 255, 0.564);
+  flex-wrap: wrap;
+}
+
+.registro-usuario li{
+  list-style: none;
+}
+
+.registro-usuario label{
+  width: 30%;
+}
+
+.registro-usuario input{
+  width: 70%;
+}
+
+.btn-registro {
+  margin-top: 30px;
+  margin-left: 55px;
+  padding: 8px;
+  background-color: rgb(49, 136, 173);
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.564);
+  border-style: none; 
+}
+
+.btn-registro:hover {
+  background-color: rgb(32, 81, 102);
+  color: aliceblue;
+}
+
+
+
 
 
 
@@ -123,8 +147,7 @@ footer a {
   }
 
   .nav .icon-menu {
-    display: block;
+    display: flex;
+    align-items: flex-end;
   }
-
-
 }
