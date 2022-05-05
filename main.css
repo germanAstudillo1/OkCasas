@@ -52,8 +52,10 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
+
 
 footer a {
   text-decoration: none;
@@ -61,6 +63,7 @@ footer a {
   width: auto;
 }
 
+/*SERVICIO*/
 .contenido-servicios {
   margin-top: 80px;
   padding: 50px;
@@ -87,6 +90,20 @@ footer a {
   text-align: start;
 }
 
+.servicios button{
+  margin-top: 30px;
+  padding: 8px;
+  background-color: rgb(49, 136, 173);
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.664);
+  border-style: none;
+}
+
+.servicios .btn-servicios{
+  text-align: center;
+}
+
+/*Registrar Usuario*/
 .contenido-registro {
   margin-top: 80px;
   padding: 50px;
@@ -109,45 +126,136 @@ footer a {
   flex-wrap: wrap;
 }
 
-.registro-usuario li{
+.registro-usuario li {
   list-style: none;
 }
 
-.registro-usuario label{
-  width: 30%;
+.registro-usuario label {
+  width: 100%;
+  color: rgba(255, 251, 246, 0.872);
 }
 
-.registro-usuario input{
-  width: 70%;
+.registro-usuario input {
+  width: 100%;
 }
 
-.btn-registro {
+.registro-usuario button {
   margin-top: 30px;
-  margin-left: 55px;
   padding: 8px;
   background-color: rgb(49, 136, 173);
   justify-content: center;
+  color: rgba(255, 255, 255, 0.664);
+  border-style: none;
+}
+
+.registro-usuario .btn-registro {
+  text-align: center;
+}
+
+/* Contacto */
+.contenido-contacto {
+  margin-top: 80px;
+  padding: 50px;
   color: rgba(255, 255, 255, 0.564);
-  border-style: none; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.btn-registro:hover {
-  background-color: rgb(32, 81, 102);
-  color: aliceblue;
+.contacto {
+  margin-top: 10px;
+  padding: 60px;
+  background-color: rgba(255, 255, 255, 0.564);
+  flex-wrap: wrap;
 }
 
 
+.contacto li {
+  margin-top: 10px;
+  list-style: none;
+}
 
-
-
-
-@media screen and (max-width: 700px) {
-  .nav ul {
-    display: none;
+.contacto input {
+  background-color: aliceblue;
+  width: 100%;
+    border: none;
   }
 
-  .nav .icon-menu {
+  .contacto textarea {
+    background-color: aliceblue;
+    width: 100%;
+    resize: none;
+  }
+
+  .contacto label {
+    width: 30%;
+  }
+
+  .contacto button {
+    margin-top: 30px;
+    padding: 8px;
+    background-color: rgb(49, 136, 173);
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.564);
+    border-style: none;
+  }
+
+  .contacto .boton {
+    text-align: center;
+  }
+
+  /*Login*/
+  .contenido-login {
+    margin-top: 80px;
+    padding: 50px;
+    color: rgba(255, 255, 255, 0.564);
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
-}
+
+  .login {
+    margin-top: 10px;
+    padding: 60px;
+    background-color: rgba(255, 255, 255, 0.564);
+    flex-wrap: wrap;
+  }
+
+  .login li{
+    list-style: none;
+    margin-top: 10px;
+  }
+
+  .login input{
+    background-color: aliceblue;
+    width: 100%;
+    border: none;
+  }
+
+  .login button{ 
+    margin-top: 30px;
+    padding: 8px;
+    background-color: rgb(49, 136, 173);
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.564);
+    border-style: none;
+
+  }
+
+  .login .btn-login{
+    text-align: center;
+  }
+
+  .contenido-login i{
+    color: rgb(155, 185, 185);
+    padding: 20px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 50%;
+    font-size: 30px;
+  }
+
+  .contenido-login .icon-login{
+    text-align: center;
+  }

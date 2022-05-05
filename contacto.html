@@ -40,73 +40,47 @@
               <a class="nav-link" aria-current="page" href="index.html">
                 <i class="fa-solid fa-house"></i>Home</a
               >
-              <a class="nav-link active" href="servicios.html"
+              <a class="nav-link" href="servicios.html"
                 ><i class="fa-solid fa-briefcase"></i>Servicios</a
               >
-              <a class="nav-link" href="contacto.html"
-                ><i class="fa-solid fa-envelope"></i>Contacto</a
+              <a class="nav-link active" href="contacto.html"
+                ><i class="fa-solid fa-envelope active"></i>Contacto</a
               >
               <a class="nav-link" href="registrarU.html"
                 ><i class="fa-solid fa-user-plus"></i>Registrarse</a
               >
-              <a class="nav-link"
+              <a class="nav-link" href="login.html"
                 ><i class="fa-solid fa-user"></i>Iniciar Sesión</a
               >
             </div>
           </div>
         </div>
       </nav>
-      <div class="contenido-servicios">
-        <div class="titulo-servicios">
-          <h2>¿Que servicio necesitas?</h2>
+      <div class="contenido-contacto">
+        <div class="titulo-contacto">
+          <h2>¿En qué podemos ayudarte?</h2>
         </div>
-        <div class="servicios">
+        <div class="contacto">
           <form action="">
             <ul>
               <li>
-                <label for=""
-                  >Verificación de instalaciones y terminaciones</label
-                >
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre"  />
               </li>
               <li>
-                <label for=""
-                  >Medición de metros cuadrados de la vivienda</label
-                >
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
+              <label for="apellido">Apellido</label>
+              <input type="text" name="apellido" id="apellido"  />
               </li>
               <li>
-                <label for=""
-                  >Inspección de luz, instalaciones sanitarias y gas</label
-                >
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email"  />
               </li>
               <li>
-                <label for="">Termografias</label>
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
+              <label for="mensaje-contacto">Mensaje</label>
+              <textarea name="mensaje-contacto" id="message-contacto" cols="40" rows="8"></textarea>
               </li>
-              <li class="btn-servicios">
-                <button type="submit">Contratar</button>
+              <li class="boton">
+                <button type="submit">Enviar</button>
               </li>
             </ul>
           </form>
@@ -118,7 +92,6 @@
           © 2022 Copyright:
           <a class="text-footer" href="www.google.com/">OkCasas</a>
         </div>
-        <!-- Copyright -->
       </footer>
     </div>
   <!--Script bootstrap-->
@@ -127,3 +100,4 @@
     crossorigin="anonymous"></script>
   </body>
 </html>
+
