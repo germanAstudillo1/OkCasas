@@ -56,7 +56,6 @@ footer {
   align-items: center;
 }
 
-
 footer a {
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -90,7 +89,7 @@ footer a {
   text-align: start;
 }
 
-.servicios button{
+.servicios button {
   margin-top: 30px;
   padding: 8px;
   background-color: rgb(49, 136, 173);
@@ -99,8 +98,12 @@ footer a {
   border-style: none;
 }
 
-.servicios .btn-servicios{
+.servicios .btn-servicios {
   text-align: center;
+}
+
+.servicios button:hover {
+  background-color: rgb(16, 40, 50);
 }
 
 /*Registrar Usuario*/
@@ -148,6 +151,10 @@ footer a {
   border-style: none;
 }
 
+.registro-usuario button:hover {
+  background-color: rgb(16, 40, 50);
+}
+
 .registro-usuario .btn-registro {
   text-align: center;
 }
@@ -170,7 +177,6 @@ footer a {
   flex-wrap: wrap;
 }
 
-
 .contacto li {
   margin-top: 10px;
   list-style: none;
@@ -179,83 +185,89 @@ footer a {
 .contacto input {
   background-color: aliceblue;
   width: 100%;
-    border: none;
-  }
+  border: none;
+}
 
-  .contacto textarea {
-    background-color: aliceblue;
-    width: 100%;
-    resize: none;
-  }
+.contacto textarea {
+  background-color: aliceblue;
+  width: 100%;
+  resize: none;
+}
 
-  .contacto label {
-    width: 30%;
-  }
+.contacto label {
+  width: 30%;
+}
 
-  .contacto button {
-    margin-top: 30px;
-    padding: 8px;
-    background-color: rgb(49, 136, 173);
-    justify-content: center;
-    color: rgba(255, 255, 255, 0.564);
-    border-style: none;
-  }
+.contacto button {
+  margin-top: 30px;
+  padding: 8px;
+  background-color: rgb(49, 136, 173);
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.564);
+  border-style: none;
+}
 
-  .contacto .boton {
-    text-align: center;
-  }
+.contacto .boton {
+  text-align: center;
+}
 
-  /*Login*/
-  .contenido-login {
-    margin-top: 80px;
-    padding: 50px;
-    color: rgba(255, 255, 255, 0.564);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
+.contacto button:hover {
+  background-color: rgb(16, 40, 50);
+}
 
-  .login {
-    margin-top: 10px;
-    padding: 60px;
-    background-color: rgba(255, 255, 255, 0.564);
-    flex-wrap: wrap;
-  }
+/*Login*/
+.contenido-login {
+  margin-top: 80px;
+  padding: 50px;
+  color: rgba(255, 255, 255, 0.564);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .login li{
-    list-style: none;
-    margin-top: 10px;
-  }
+.login {
+  margin-top: 10px;
+  padding: 60px;
+  background-color: rgba(255, 255, 255, 0.564);
+  flex-wrap: wrap;
+}
 
-  .login input{
-    background-color: aliceblue;
-    width: 100%;
-    border: none;
-  }
+.login li {
+  list-style: none;
+  margin-top: 10px;
+}
 
-  .login button{ 
-    margin-top: 30px;
-    padding: 8px;
-    background-color: rgb(49, 136, 173);
-    justify-content: center;
-    color: rgba(255, 255, 255, 0.564);
-    border-style: none;
+.login input {
+  background-color: aliceblue;
+  width: 100%;
+  border: none;
+}
 
-  }
+.login button {
+  margin-top: 30px;
+  padding: 8px;
+  background-color: rgb(49, 136, 173);
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.564);
+  border-style: none;
+}
 
-  .login .btn-login{
-    text-align: center;
-  }
+.login .btn-login {
+  text-align: center;
+}
+.login button:hover {
+  background-color: rgb(16, 40, 50);
+}
 
-  .contenido-login i{
-    color: rgb(155, 185, 185);
-    padding: 20px;
-    background-color: rgb(241, 241, 241);
-    border-radius: 50%;
-    font-size: 30px;
-  }
+.contenido-login i {
+  color: rgb(155, 185, 185);
+  padding: 20px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 50%;
+  font-size: 30px;
+}
 
-  .contenido-login .icon-login{
-    text-align: center;
-  }
+.contenido-login .icon-login {
+  text-align: center;
+}
