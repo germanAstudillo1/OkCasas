@@ -61,23 +61,29 @@
           <h2>¿En qué podemos ayudarte?</h2>
         </div>
         <div class="contacto">
-          <form action="">
+          <form id="contacto-form" name="contacto-form">
             <ul>
               <li>
                 <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre"  />
+                <input type="text" name="nombre" id="nombre" pattern="^[A-Za-z]+$" maxlength="45" minlength="3" oninvalid="setCustomValidity('El nombre solo puede contener letras.')" required/>
               </li>
               <li>
-              <label for="apellido">Apellido</label>
-              <input type="text" name="apellido" id="apellido"  />
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" pattern="^[A-Za-z]+$" maxlength="45" minlength="3" oninvalid="setCustomValidity('El apellido solo puede contener letras.')" required />
               </li>
               <li>
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email"  />
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required/>
               </li>
               <li>
-              <label for="mensaje-contacto">Mensaje</label>
-              <textarea name="mensaje-contacto" id="message-contacto" cols="40" rows="8"></textarea>
+                <label for="mensaje-contacto">Mensaje</label>
+                <textarea
+                  name="mensaje-contacto"
+                  id="mensaje-contacto"
+                  cols="40"
+                  rows="8"
+                  required
+                ></textarea>
               </li>
               <li class="boton">
                 <button type="submit">Enviar</button>
@@ -94,10 +100,14 @@
         </div>
       </footer>
     </div>
-  <!--Script bootstrap-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+    <!--Script bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!--SweetAlert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/agregarContacto.js"></script>
   </body>
 </html>
-
